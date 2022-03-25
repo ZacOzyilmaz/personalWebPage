@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    height: 90vh;
+    background-color: lightblue;
+    width: 100%;
+}
+
+main > article{
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+    margin: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: (inherit -2px);
+    border-radius: 4%;
+    background-color: aliceblue;
+    flex-direction: column;
+    padding: 2.5vh;
+}

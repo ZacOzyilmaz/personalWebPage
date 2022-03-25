@@ -1,0 +1,31 @@
+#teach-box{
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    display: flex;
+    height: 25vw;
+    width: 25vw;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: transform 25s ease-in;
+}
+
+#teach-box:hover{
+    transform: rotate(10000deg);
+    background-color: cadetblue;
+}
+
+#do-things{
+    position: absolute;
+    display: flex;
+    height: 12.5vw;
+    width: 12.5vw;
+    background-color: orangered;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    border-style: dotted;
+    border-color: azure;
+}
