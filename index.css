@@ -45,7 +45,7 @@ main > aside{
 }
 
 .article-one{
-    font-family: 'Inspiration', cursive;
+    /* font-family: 'Inspiration', cursive; */
     max-width: 100%;
     padding: 1vw;
 }
