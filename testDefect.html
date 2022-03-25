@@ -26,21 +26,26 @@
     </div> <!--End of top navigation bar-->
 
     <main class="container main"> <!--Questions needed for form-->
-        <form action="#"> <!--Need to add where the data is being sent to-->
+        <form action="results.html" method="get"> <!--Need to add where the data is being sent to-->
             <label for="projectID">Project Name:</label><br>
             <input type="text" id="projectID" name="projectID"><br><br>
-            <label for="issueDescription">Issue Description:</label><br>
-            <input type="text" id="issueDescription" name="issueDescription"><br><br>
-            <label for="locationFound">Located at:</label><br>
-            <input type="text" id="locationFound" name="locationFound"><br><br>
+            <label for="issueDes">Issue Description:</label><br>
+            <input type="text" id="issueDes" name="issueDes"><br><br>
+            <label for="locFound">Located at:</label><br>
+            <input type="text" id="locFound" name="locFound"><br><br>
             <label for="foundBy">Found By:</label><br>
             <input type="text" id="foundBy" name="foundBy"><br><br>
-            <label for="expectedBeh">Expected Behavior:</label><br>
-            <input type="text" id="expectedBeh" name="expectedBeh"><br><br>
+            <label for="exBeh">Expected Behavior:</label><br>
+            <input type="text" id="exBeh" name="exBeh"><br><br>
             <label for="otherInfo">Additional Info:</label><br>
-            <input type="text" id="otherInfo" name="otherInfo"><br><br>
+            <textarea id="otherInfo" name="otherInfo"></textarea><br><br>
             <input type="submit">
         </form>
+
+           <div class="defectTable">
+               <p>Some table to go here to gather defect inputs from users</p>
+           </div> 
+
     </main>
 
     <footer> <!--Bottom navigation bar-->

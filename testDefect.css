@@ -11,3 +11,17 @@ main > form{
     flex-direction: column;
     padding: 2.5vh;
 }
+
+main > defectTable{
+    display: flex;
+    width: 25%;
+    border: 2px solid black;
+    margin: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: fit-content;
+    border-radius: 4%;
+    background-color: aliceblue;
+    flex-direction: column;
+    padding: 2.5vh;
+}

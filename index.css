@@ -19,7 +19,9 @@ main > article{
     height: (inherit -2px);
     border-radius: 4%;
     background-color: aliceblue;
-    
+    @media screen {
+        font-size: fit-content;
+    }
 }
 
 main > aside{
@@ -32,6 +34,9 @@ main > aside{
     margin: 2vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
+    @media screen {
+       font-size: fit-content; 
+    }
 }
 
 .hero-image{
