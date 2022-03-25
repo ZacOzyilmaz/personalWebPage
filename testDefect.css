@@ -12,7 +12,7 @@ main > form{
     padding: 2.5vh;
 }
 
-main > defectTable{
+.defectTable{
     display: flex;
     width: 25%;
     border: 2px solid black;
