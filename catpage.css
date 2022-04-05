@@ -1,0 +1,31 @@
+#slider > img {
+    min-height: 25vw;
+    max-height: 25vw;
+    min-width: 25vw;
+    max-width: 25vw;
+}
+
+#window{
+    height: 25vw;
+    width: 25vw;
+    overflow: hidden;
+}
+
+#slider {
+    display: flex;
+    /* transform: translateX(-200px); */
+}
+
+main > article{
+    display: flex;
+    width: 25%;
+    border: 2px solid black;
+    margin: 3vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: (inherit -2px);
+    border-radius: 4%;
+    background-color: aliceblue;
+    flex-direction: column;
+    padding: 2.5vh;
+}

@@ -26,7 +26,7 @@
     </div> <!--End of top navigation bar-->
 
     <main class="container main"> <!--Questions needed for form-->
-        <form action="results.html" method="get"> <!--Need to add where the data is being sent to-->
+        <form action="testDefect.js" method=""> <!--Need to add where the data is being sent to?-->
             <label for="projectID">Project Name:</label><br>
             <input type="text" id="projectID" name="projectID"><br><br>
             <label for="issueDes">Issue Description:</label><br>
@@ -44,7 +44,12 @@
         </form>
 
            <div class="defectTable">
-               <p>Some table to go here to gather defect inputs from users</p>
+               <div id="proJectID_Sub"><h3>Project ID</h3></div>
+               <div id="issueDes_Sub"><h3>Issue Description</h3></div>
+               <div id="locFound_Sub"><h3>Location Found</h3></div>
+               <div id="foundBy_Sub"><h3>Found By</h3></div>
+               <div id="exBeh_Sub"><h3>Expected Behavior</h3></div>
+               <div id="otherInfo_Sub"><h3>Other Info</h3></div>
            </div> 
 
     </main>
