@@ -1,6 +1,6 @@
 main > form{
     display: flex;
-    width: 25%;
+    width: fit-content;
     border: 2px solid black;
     margin: 3vh;
     margin-top: 1vh;
@@ -13,15 +13,37 @@ main > form{
 }
 
 .defectTable{
-    display: flex;
-    width: 25%;
+    width: fit-content;
     border: 2px solid black;
     margin: 3vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
-    height: fit-content;
+    height: 80%;
     border-radius: 4%;
     background-color: aliceblue;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 2.5vh;
+}
+
+.tableHeading{
+    display: flex;   
+} 
+
+.tableBody{
+    display: flex;
+}
+
+.tablePID{
+    width: 10ch;
+    max-width: 10ch;
+}
+
+.tableTLID, .tableTEID, .tableTFID{
+    width: 20ch;
+    max-width: 20ch;
+}
+
+.tableTIID, .tableTOID{
+    width: 30ch;
+    max-width: 30ch;
 }

@@ -8,13 +8,21 @@ function goRight(){
     } else if (pointer == 5) { // if the image is at the last element (5), will loop to the first picture
         pointer = 0;   
     } 
+    var w = window.innerWidth;
+
+    // if (w > "1500px"){
+    //     document.getElementById("slider").style.transform = ("translateX(-" + pointer * 400 + "px)");
+    // } else {
+    //     document.getElementById("slider").style.transform = ("translateX(-" + pointer * 25 + "vw)");
+    // }   
     document.getElementById("slider").style.transform = ("translateX(-" + pointer * 25 + "vw)");
-        
+
     console.log(pointer);
 }
 
 function goLeft(){
     console.log("go left has been clicked");
+    var w = window.innerWidth;
 
     if (pointer == 0){ //checks if image is at the left-most picture and if so, loops to the last picture
         pointer = 5;
@@ -22,6 +30,6 @@ function goLeft(){
         pointer--;  
     } 
     document.getElementById("slider").style.transform = ("translateX(-" + pointer * 25 + "vw)");
-        
+    
     console.log(pointer);
 }

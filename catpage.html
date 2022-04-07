@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="standard.css">
+    <link rel="stylesheet" href="catpage.css">
+    <script src="catpage.js" defer></script>
     <title>Cat Blog</title>
 </head>
 
@@ -13,7 +15,7 @@
     <div class="container"> <!--Top Navigation bar-->
         <div class="header-logo">
             <img class="logo" 
-                src="https://i.imgur.com/rQT9m2L.png" alt="snowflake logo">
+                src="assets\Logos\Snowflake.png" alt="snowflake logo">
         </div>
 
         <div class="header-items">
@@ -26,38 +28,37 @@
         </div>
     </div> <!--End of top navigation bar-->
 
-    <main class="main container"> <!--Main class for the page. I will put cat photos and info here. Similar to a blog post-->
-        <article>
+    <main class="main container">
+        <!-- <article>
             <div>
                 <p>This page is a work in progress!</p>
             </div>
-        </article>
         </article> -->
-
-        <div id="window">
-            <div id="slider">
-                <img src="assets/CatPhotos/20220226_231204.jpg">
-                <img src="assets/CatPhotos/20220226_231330.jpg">
-                <img src="assets/CatPhotos/20220228_113706.jpg">
-                <img src="assets/CatPhotos/20220228_210328.jpg">
-                <img src="assets/CatPhotos/20220303_133259.jpg">
-                <img src="assets/CatPhotos/20220317_073243.jpg">
-                <img src="assets/CatPhotos/20220317_141135.jpg">
+        <div id="picSelector">
+            <div id="window">
+                <div id="slider">
+                    <img src="assets/CatPhotos/20220226_231204.jpg">
+                    <img src="assets/CatPhotos/20220226_231330.jpg">
+                    <img src="assets/CatPhotos/20220228_113706.jpg">
+                    <img src="assets/CatPhotos/20220228_210328.jpg">
+                    <img src="assets/CatPhotos/20220303_133259.jpg">
+                    <img src="assets/CatPhotos/20220317_073243.jpg">
+                    <img src="assets/CatPhotos/20220317_141135.jpg">
+                </div>
             </div>
-            
-        </div>
 
         <div id="navButton">
             <button onclick="goLeft()" id="leftButton">Go Left</button>
             <button onclick="goRight()" id="rightButton">Go Right</button>             
-        </div> 
+        </div>
 
+    </div>
     </main> <!--End of Main class for the page-->
 
     <footer> <!--Bottom navigation bar-->
         <a href="contactinfo.html">Contact Info</a>
-        <a href="#">copyright info</a>
-        <a href="#">etc.</a>
+        <a href="guestbook.html">Guestbook</a>
+        <a href="feedback.html">Feedback</a>
     </footer>
 </body>
 </html>

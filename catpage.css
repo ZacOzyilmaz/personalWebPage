@@ -1,17 +1,16 @@
 #slider > img {
-    height: 25vh;
+    height: 30vh;
     width: 25vw;
-    /* min-width: 25vw;
-    max-width: 25vw; */
-    max-width: 300px;
-    max-height: 300px;
+
+    /* max-width: 300px;
+    max-height: 300px; */
 }
 
 #window{
-    height: 25vh;
+    height: 30vh;
     width: 25vw;
-    max-width: 300px;
-    max-height: 300px;
+    /* max-width: 300px;
+    max-height: 300px; */
     overflow: hidden;
 }
 
@@ -24,14 +23,16 @@ main {
     flex-direction: column;
 }
 
-main > #window{
+div > #window{
     display: flex;
     width: 25vw;
     border: 2px solid black;
     /* margin: 25vh; */
-    margin-top: 25vh;
+    /* margin-top: 25vh;
     margin-left: 25vw;
-    margin-bottom: 1vh;
+    margin-bottom: 1vh; */
+    position: fixed;
+
     height: (inherit -2px);
     border-radius: 4%;
     background-color: aliceblue;
@@ -44,5 +45,11 @@ main > #window{
     display: flex;
     width: fit-content;
     height: fit-content;
-    margin-left: 34vw;
+    margin-top: 35vh;
+}
+
+#picSelector{
+    display: flex;
+    flex-direction: column;
+    width: 25vw + 4px;
 }

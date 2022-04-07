@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="testDefect.css">
     <link rel="stylesheet" href="standard.css">
+    <script src="testDefect.js" defer></script>
 </head>
 <body>
     <div class="container"> <!--Top Navigation bar-->
         <div class="header-logo">
             <img class="logo" 
-                src="https://i.imgur.com/rQT9m2L.png" alt="snowflake logo">
+                src="assets\Logos\Snowflake.png" alt="snowflake logo">
         </div>
         <div class="header-items">
             <nav>
@@ -26,27 +27,40 @@
     </div> <!--End of top navigation bar-->
 
     <main class="container main"> <!--Questions needed for form-->
-        <form action="results.html" method="get"> <!--Need to add where the data is being sent to-->
+        <form> <!--Need to add where the data is being sent to-->
             <label for="projectID">Project Name:</label><br>
-            <input type="text" id="projectID" name="projectID"><br><br>
+            <input type="text" id="projectID" name="projectID" maxlength="10" placeholder="projectID"><br><br>
             <label for="issueDes">Issue Description:</label><br>
-            <input type="text" id="issueDes" name="issueDes"><br><br>
+            <input type="text" id="issueDes" name="issueDes" maxlength="20" placeholder="Issue decribed"><br><br>
             <label for="locFound">Located at:</label><br>
-            <input type="text" id="locFound" name="locFound"><br><br>
+            <input type="text" id="locFound" name="locFound" maxlength="20" placeholder="Location Found"><br><br>
             <label for="foundBy">Found By:</label><br>
-            <input type="text" id="foundBy" name="foundBy"><br><br>
+            <input type="text" id="foundBy" name="foundBy" maxlength="20" placeholder="Found by Zac"><br><br>
             <label for="exBeh">Expected Behavior:</label><br>
-            <input type="text" id="exBeh" name="exBeh"><br><br>
+            <input type="text" id="exBeh" name="exBeh" maxlength="20" placeholder="Expected Beh"><br><br>
             <label for="otherInfo">Additional Info:</label><br>
-            <textarea id="otherInfo" name="otherInfo"></textarea><br><br>
-            <input type="submit">
+            <textarea id="otherInfo" name="otherInfo" placeholder="Additional Info"></textarea><br><br>
+            <button onclick="createNewRow(event)" id="submitButton">Submit</button>
             <input type="reset">
         </form>
 
-           <div class="defectTable">
-               <p>Some table to go here to gather defect inputs from users</p>
-           </div> 
+        <table class="defectTable" id="defectTable">
+            <thead class="tableHeading" id="tableHeading"> <!--Will not change at all. Header for table-->
+                <tr>
+                    <th class="tablePID">Project ID</th>
+                    <th class="tableTLID">Location Found</th>
+                    <th class="tableTFID">Found By</th>
+                    <th class="tableTEID">Expected Behavior</th>
+                    <th class="tableTIID">Issue Description</th>
+                    <th class="tableTOID">Other Info</th>
+                </tr>
+            </thead>
+            <tbody class="tableBody" id="tableBody"> <!--This is the template for the script to add user input-->
 
+            </tbody>
+        </table> 
+
+            
     </main>
 
     <footer> <!--Bottom navigation bar-->
@@ -57,3 +71,14 @@
 
 </body>
 </html>
+
+
+
+                <!-- <tr>
+                    <td class="tablePID">test project id</td>
+                    <td class="tableTLID">test location found</td>
+                    <td class="tableTFID">test found by</td>
+                    <td class="tableTEID">text exp beh</td>
+                    <td class="tableTIID">test issue desc</td>
+                    <td class="tableTOID">test other info</td> 
+                </tr> -->
