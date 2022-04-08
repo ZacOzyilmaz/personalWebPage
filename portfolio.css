@@ -1,0 +1,18 @@
+article > div > div{
+    width: 10vw;
+    height: 10vw;
+    overflow: hidden;
+    
+    border: solid 1px black;
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+article > div{
+    display: flex;
+    justify-content: center;
+}
+
