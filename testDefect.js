@@ -1,5 +1,4 @@
 const inputID = ['projectID','issueDes', 'locFound', 'foundBy', 'exBeh', 'otherInfo'];
-var rowList = 0;
 
 function getDefectData(elementID){ //Gets the data from the form
     var data = document.getElementById(elementID).value;
@@ -9,8 +8,7 @@ function getDefectData(elementID){ //Gets the data from the form
 function createNewRow(event){ //creates a new row
     event.preventDefault();
     var table = document.getElementById('tableBody');
-    var row = table.insertRow();
-
+    var row = table.insertRow(-1);
     
 //creates cell and gives it a class
     var cell0 = row.insertCell(0); 
@@ -25,7 +23,7 @@ function createNewRow(event){ //creates a new row
     cell4.classList.add('tableTIID');
     var cell5 = row.insertCell(5);
     cell5.classList.add('tableTOID');
-
+    
 //gives the inner text to the cell
     cell0.innerHTML = getDefectData('projectID'); 
     cell1.innerHTML = getDefectData('locFound');
@@ -33,7 +31,12 @@ function createNewRow(event){ //creates a new row
     cell3.innerHTML = getDefectData('exBeh');
     cell4.innerHTML = getDefectData('issueDes');
     cell5.innerHTML = getDefectData('otherInfo');
-
-    rowList++;
 }
 
+//this will delete the current row
+function deleteRow(event){
+    
+    event.preventDefault();
+
+    document.getElementById('tableBody').deleteRow(-1);
+}

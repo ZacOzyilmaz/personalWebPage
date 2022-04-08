@@ -1,0 +1,23 @@
+.calcBody{
+    width: 20vw;
+    height: 30vw;
+    border: solid 2px black;
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulaText{
+    width: max-content;
+}
+
+#inputfield{
+    width: 100%;
+    height: 2ch;
+    border: solid 1px red;
+    background-color: black;
+}

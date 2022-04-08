@@ -19,9 +19,8 @@
         <div class="header-items">
             <nav>
                 <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
                 <a href="portfolio.html">Portfolio</a>
-                <a href="catpage.html">Cat Photos</a>
+                <!-- <a href="about.html">About Me</a> -->
             </nav>
         </div>
     </div> <!--End of top navigation bar-->
@@ -32,7 +31,7 @@
             <input type="text" id="projectID" name="projectID" maxlength="10" placeholder="projectID"><br><br>
             <label for="issueDes">Issue Description:</label><br>
             <input type="text" id="issueDes" name="issueDes" maxlength="20" placeholder="Issue decribed"><br><br>
-            <label for="locFound">Located at:</label><br>
+            <label for="locFound">Page Found On:</label><br>
             <input type="text" id="locFound" name="locFound" maxlength="20" placeholder="Location Found"><br><br>
             <label for="foundBy">Found By:</label><br>
             <input type="text" id="foundBy" name="foundBy" maxlength="20" placeholder="Found by Zac"><br><br>
@@ -41,14 +40,15 @@
             <label for="otherInfo">Additional Info:</label><br>
             <textarea id="otherInfo" name="otherInfo" placeholder="Additional Info"></textarea><br><br>
             <button onclick="createNewRow(event)" id="submitButton">Submit</button>
-            <input type="reset">
+            <input type="reset" value="Reset Form Data">
+            <button onclick="deleteRow(event)">Delete Latest Entry</button>
         </form>
 
         <table class="defectTable" id="defectTable">
             <thead class="tableHeading" id="tableHeading"> <!--Will not change at all. Header for table-->
                 <tr>
                     <th class="tablePID">Project ID</th>
-                    <th class="tableTLID">Location Found</th>
+                    <th class="tableTLID">Page Found On</th>
                     <th class="tableTFID">Found By</th>
                     <th class="tableTEID">Expected Behavior</th>
                     <th class="tableTIID">Issue Description</th>
@@ -58,27 +58,14 @@
             <tbody class="tableBody" id="tableBody"> <!--This is the template for the script to add user input-->
 
             </tbody>
-        </table> 
-
-            
+        </table>
     </main>
 
     <footer> <!--Bottom navigation bar-->
         <a href="contactinfo.html">Contact Info</a>
-        <a href="guestbook.html">Guestbook</a>
-        <a href="feedback.html">Feedback</a>
+        <!-- <a href="guestbook.html">Guestbook</a>
+        <a href="feedback.html">Feedback</a> -->
     </footer>
 
 </body>
 </html>
-
-
-
-                <!-- <tr>
-                    <td class="tablePID">test project id</td>
-                    <td class="tableTLID">test location found</td>
-                    <td class="tableTFID">test found by</td>
-                    <td class="tableTEID">text exp beh</td>
-                    <td class="tableTIID">test issue desc</td>
-                    <td class="tableTOID">test other info</td> 
-                </tr> -->

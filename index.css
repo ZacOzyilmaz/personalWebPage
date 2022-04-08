@@ -19,9 +19,10 @@ main > article{
     height: (inherit -2px);
     border-radius: 4%;
     background-color: aliceblue;
-    @media screen {
-        font-size: fit-content;
-    }
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 main > aside{
@@ -34,24 +35,30 @@ main > aside{
     margin: 2vh;
     margin-top: 1vh;
     margin-bottom: 1vh;
-    @media screen {
-       font-size: fit-content; 
-    }
+    flex-direction: column;
 }
 
-.hero-image{
-    height: 18rem;
-    width: 22rem;
+aside > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.article-one{
-    /* font-family: 'Inspiration', cursive; */
+.article-one, .article-two{
     max-width: 100%;
     padding: 1vw;
+    text-align: center;
 }
 
-.article-two{
-    font-family: 'Mukta', sans-serif;
-    max-width: 100%;
-    padding: 1vw; 
+#VITLogo{
+    display: flex;
+    width: 15vw;
+    margin-top: 10vh;
+}
+
+.welcome{
+    align-content: center;
+    font-size: 5em;
 }

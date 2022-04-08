@@ -27,7 +27,7 @@ a{ /* link color */
 
 nav{
     display: flex;
-    width: 50vw;
+    width: 20vw;
     justify-content: space-around;
 }
 

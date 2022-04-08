@@ -6,6 +6,7 @@ main > form{
     margin-top: 1vh;
     margin-bottom: 1vh;
     height: fit-content;
+    max-height: 91.5%;
     border-radius: 4%;
     background-color: aliceblue;
     flex-direction: column;
@@ -15,14 +16,14 @@ main > form{
 .defectTable{
     width: fit-content;
     border: 2px solid black;
-    margin: 3vh;
+    /* margin: 3vh; */
     margin-top: 1vh;
     margin-bottom: 1vh;
-    height: 80%;
+    height: 98%;
     border-radius: 4%;
     background-color: aliceblue;
-    /* flex-direction: column; */
     padding: 2.5vh;
+    text-overflow: ellipsis;
 }
 
 .tableHeading{
@@ -31,6 +32,14 @@ main > form{
 
 .tableBody{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-overflow: ellipsis;
+}
+
+.tableBody > tr{
+    border: 1px solid black;
+    text-overflow: ellipsis;
 }
 
 .tablePID{
@@ -41,9 +50,17 @@ main > form{
 .tableTLID, .tableTEID, .tableTFID{
     width: 20ch;
     max-width: 20ch;
+    text-overflow: ellipsis;
 }
 
 .tableTIID, .tableTOID{
     width: 30ch;
     max-width: 30ch;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
+
+.main{
+    display: flex;
+    justify-content: center;
+} 
