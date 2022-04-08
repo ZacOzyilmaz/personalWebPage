@@ -1,31 +1,68 @@
 #slider > img {
-    min-height: 25vw;
-    max-height: 25vw;
-    min-width: 25vw;
-    max-width: 25vw;
+    height: 30vh;
+    width: 25vw;
 }
 
 #window{
-    height: 25vw;
+    height: 30vh;
     width: 25vw;
     overflow: hidden;
 }
 
 #slider {
     display: flex;
-    /* transform: translateX(-200px); */
 }
 
-main > article{
+main {
     display: flex;
-    width: 25%;
+    flex-direction: column;
+}
+
+div > #window{
+    display: flex;
+    width: 25vw;
     border: 2px solid black;
-    margin: 3vh;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    position: fixed;
     height: (inherit -2px);
     border-radius: 4%;
     background-color: aliceblue;
     flex-direction: column;
-    padding: 2.5vh;
+    align-items: flex-start;
+}
+
+#navButton {
+    display: flex;
+    width: 25vw;
+    height: fit-content;
+    margin-top: 35vh;
+    justify-content: center;
+}
+
+#picSelector{
+    display: flex;
+    flex-direction: column;
+    width: 25vw + 4px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 5vw;
+    height: 2vw;
+    margin-left: 1vw;
+}
+
+#catTextBox, div > p{
+    width: 25vw;
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
 }

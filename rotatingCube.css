@@ -1,7 +1,4 @@
 #teach-box{
-    position: absolute;
-    top: 25vh;
-    left: 25vw;
     display: flex;
     height: 25vw;
     width: 25vw;
@@ -28,4 +25,10 @@
     z-index: 1;
     border-style: dotted;
     border-color: azure;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

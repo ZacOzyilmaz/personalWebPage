@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="standard.css">
+    <link rel="stylesheet" href="calculator.css">
+    
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div class="container"> <!--Top Navigation bar-->
+        <div class="header-logo">
+            <img class="logo" 
+                src="assets\Logos\Snowflake.png" alt="snowflake logo">
+        </div>
+        <div class="header-items">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <!-- <a href="about.html">About Me</a> -->
+            </nav>
+        </div>
+    </div> <!--End of top navigation bar-->
+
+    <main class="container main"> <!--Main background for page-->
+        <div class="calcBody"> <!--Entire Calculator div-->
+            <div> <!--Text body-->
+                <input id="inputField">inputfield</input>
+            </div>
+            <div> <!--Calc button & Results view-->
+                <button>Clear</button> <!-- Clear Button-->
+                <button>Calculate</button> <!-- Calc Button-->
+                <p></p> <!-- Results-->
+            </div>
+            <div> <!--Numberpad & operator buttons-->
+                <div id="numberpadButtons"> <!-- Numberpad-->
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>0</button>
+                </div>
+                <div id="operatorButtons"> <!-- Operator-->
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer> <!--Bottom navigation bar-->
+        <a href="contactinfo.html">Contact Info</a>
+        <!-- <a href="guestbook.html">Guestbook</a>
+        <a href="feedback.html">Feedback</a> -->
+    </footer>
+
+</body>
+</html>
