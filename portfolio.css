@@ -9,6 +9,20 @@ article > div > div{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    overflow: hidden;
+    background-color: black;
+    color:white;
+}
+
+article > div > div:hover{
+    background-color: mediumblue;
+    color: darkorange;
+    cursor: pointer;
+}
+
+article > div > div:active{
+    background-color: red;
+    color:black;
 }
 
 article > div{

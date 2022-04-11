@@ -1,5 +1,6 @@
 const inputID = ['projectID','issueDes', 'locFound', 'foundBy', 'exBeh', 'otherInfo'];
 
+//=============== Below Code to move data from form to table =================//
 function getDefectData(elementID){ //Gets the data from the form
     var data = document.getElementById(elementID).value;
     return data;
@@ -33,10 +34,49 @@ function createNewRow(event){ //creates a new row
     cell5.innerHTML = getDefectData('otherInfo');
 }
 
-//this will delete the current row
-function deleteRow(event){
+
+function deleteRow(event){ //this will delete the current row
     
     event.preventDefault();
 
     document.getElementById('tableBody').deleteRow(-1);
+}
+
+
+//=============== Below Code to export HTML Table to CSV =================//
+
+function htmlToCSV(event){
+    event.preventDefault();
+    
+    var data = [];
+    var rows = document.querySelectorAll("tbody, tr");
+
+    for (var i = 0; i <rows.length; i++) {
+        var row = [], cols = rows[i].querySelectorAll("td, th");
+
+        for (var j = 0; j < cols.length; j++) {
+            row.push(cols[j].innerText);
+        }
+
+        data.push(row.join(","));
+    }
+
+    
+    downloadCSVFile(data.join("\n"), "defectReport.csv");
+}
+
+function downloadCSVFile(csv, filename) {
+    var csv_file, download_link;
+
+    csv_file = new Blob([csv], {type: "text/csv"});
+
+    download_link = document.createElement("a");
+
+    download_link.download = filename;
+    download_link.href = window.URL.createObjectURL(csv_file);
+    download_link.style.display = "none";
+
+    document.body.appendChild(download_link);
+
+    download_link.click();
 }
